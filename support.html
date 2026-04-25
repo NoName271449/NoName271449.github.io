@@ -3,19 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>サポート | 簡単ボイスチェンジャー：ワンタップで声を変換</title>
+    <title>サポート | Kanekokei Apps</title>
     <style>
       :root {
-        --bg-1: #0b0f18;
-        --bg-2: #121a26;
-        --bg-3: #0a0c13;
-        --card: rgba(22, 30, 43, 0.84);
-        --line: rgba(255, 255, 255, 0.12);
-        --text: #ffffff;
-        --sub: rgba(255, 255, 255, 0.82);
-        --muted: rgba(255, 255, 255, 0.68);
-        --cyan: #18f6ff;
-        --pink: #ff4dc4;
+        --bg: #f3f6fb;
+        --card: #ffffff;
+        --line: #d8e0ec;
+        --text: #101827;
+        --sub: #465469;
+        --muted: #758196;
+        --accent: #3b4a63;
       }
 
       * {
@@ -28,77 +25,60 @@
         color: var(--text);
         font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
         line-height: 1.75;
-        background: linear-gradient(180deg, var(--bg-1), var(--bg-2), var(--bg-3));
+        background: linear-gradient(180deg, #ffffff, var(--bg));
       }
 
       a {
-        color: var(--cyan);
-      }
-
-      .orb {
-        position: fixed;
-        border-radius: 999px;
-        filter: blur(58px);
-        opacity: 0.24;
-        pointer-events: none;
-      }
-
-      .orb.cyan {
-        width: 260px;
-        height: 260px;
-        top: -80px;
-        right: -70px;
-        background: var(--cyan);
-      }
-
-      .orb.pink {
-        width: 220px;
-        height: 220px;
-        left: -40px;
-        bottom: 60px;
-        background: var(--pink);
+        color: var(--accent);
+        font-weight: 700;
       }
 
       .wrap {
-        position: relative;
-        z-index: 1;
         width: min(880px, calc(100% - 24px));
-        margin: 20px auto 32px;
+        margin: 24px auto 36px;
+      }
+
+      .hero,
+      .section {
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: var(--card);
+        box-shadow: 0 12px 28px rgba(32, 46, 70, 0.08);
       }
 
       .hero {
-        margin-bottom: 14px;
-        padding: 22px 20px;
-        border: 1px solid var(--line);
-        border-radius: 18px;
-        background: linear-gradient(135deg, rgba(24, 246, 255, 0.12), rgba(255, 77, 196, 0.08));
-        box-shadow: 0 14px 34px rgba(0, 0, 0, 0.22);
-      }
-
-      h1 {
-        margin: 0;
-        font-size: clamp(26px, 4vw, 34px);
-        line-height: 1.3;
-        letter-spacing: 0.02em;
-      }
-
-      .lead {
-        margin: 10px 0 0;
-        color: var(--sub);
+        padding: 26px 22px;
       }
 
       .section {
         margin-top: 14px;
-        padding: 18px;
-        border: 1px solid var(--line);
-        border-radius: 16px;
-        background: var(--card);
-        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+        padding: 20px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(28px, 5vw, 40px);
+        line-height: 1.3;
+      }
+
+      h2 {
+        margin: 0 0 8px;
+        font-size: 20px;
       }
 
       p {
         margin: 0;
         color: var(--sub);
+      }
+
+      ul {
+        margin: 10px 0 0;
+        padding-left: 1.2em;
+        color: var(--sub);
+      }
+
+      .lead {
+        margin-top: 10px;
       }
 
       .footer {
@@ -110,20 +90,38 @@
     </style>
   </head>
   <body>
-    <div class="orb cyan"></div>
-    <div class="orb pink"></div>
-
     <main class="wrap">
       <section class="hero">
         <h1>サポート</h1>
-        <p class="lead">簡単ボイスチェンジャー：ワンタップで声を変換 のお問い合わせ窓口です。</p>
+        <p class="lead">Kanekokeiが提供するアプリのお問い合わせ窓口です。</p>
       </section>
 
       <section class="section">
-        <p>お問い合わせ: <a href="mailto:apurisapoto25@gmail.com">apurisapoto25@gmail.com</a></p>
+        <h2>対応アプリ</h2>
+        <ul>
+          <li>じぶんガチャ</li>
+          <li>簡単ボイスチェンジャー：ワンタップで声を変換</li>
+        </ul>
       </section>
 
       <section class="section">
+        <h2>お問い合わせ</h2>
+        <p>不具合、使い方、その他のお問い合わせは以下のメールアドレスまでご連絡ください。</p>
+        <p><a href="mailto:apurisapoto25@gmail.com">apurisapoto25@gmail.com</a></p>
+      </section>
+
+      <section class="section">
+        <h2>よくある確認事項</h2>
+        <ul>
+          <li>じぶんガチャで画像を選択できない場合は、端末の写真アクセス権限を確認してください。</li>
+          <li>広告が表示されない場合は、通信環境を確認してください。</li>
+          <li>ボイスチェンジャーで録音できない場合は、端末のマイクアクセス権限を確認してください。</li>
+          <li>作成したデータは、各アプリ内の保存データとして管理されます。</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>関連ページ</h2>
         <p><a href="privacy.html">プライバシーポリシー</a></p>
       </section>
 
