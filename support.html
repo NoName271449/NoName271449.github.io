@@ -77,6 +77,29 @@
         color: var(--sub);
       }
 
+      .app-grid {
+        display: grid;
+        gap: 12px;
+        margin-top: 12px;
+      }
+
+      .app-card {
+        padding: 16px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: #f8fafd;
+      }
+
+      .app-card strong {
+        display: block;
+        margin-bottom: 4px;
+        color: var(--text);
+      }
+
+      .app-card span {
+        color: var(--sub);
+      }
+
       .lead {
         margin-top: 10px;
       }
@@ -98,25 +121,41 @@
 
       <section class="section">
         <h2>対応アプリ</h2>
-        <ul>
-          <li>じぶんガチャ</li>
-          <li>簡単ボイスチェンジャー：ワンタップで声を変換</li>
-        </ul>
+        <div class="app-grid">
+          <div class="app-card">
+            <strong>じぶんガチャ</strong>
+            <span>画像付きのオリジナルガチャを作成、保存、編集して楽しめるアプリです。</span>
+          </div>
+          <div class="app-card">
+            <strong>簡単ボイスチェンジャー：ワンタップで声を変換</strong>
+            <span>録音した声を加工して楽しめるアプリです。</span>
+          </div>
+        </div>
       </section>
 
       <section class="section">
         <h2>お問い合わせ</h2>
         <p>不具合、使い方、その他のお問い合わせは以下のメールアドレスまでご連絡ください。</p>
         <p><a href="mailto:apurisapoto25@gmail.com">apurisapoto25@gmail.com</a></p>
+        <p>お問い合わせの際は、アプリ名、端末名、iOSバージョン、発生している内容を記載してください。</p>
       </section>
 
       <section class="section">
-        <h2>よくある確認事項</h2>
+        <h2>じぶんガチャの確認事項</h2>
         <ul>
-          <li>じぶんガチャで画像を選択できない場合は、端末の写真アクセス権限を確認してください。</li>
+          <li>画像を選択できない場合は、端末の写真アクセス権限を確認してください。</li>
+          <li>作成したガチャや景品情報は、アプリ内の保存データとして管理されます。</li>
+          <li>中身が減るガチャは、リセット機能で残り数を初期状態に戻せます。</li>
           <li>広告が表示されない場合は、通信環境を確認してください。</li>
-          <li>ボイスチェンジャーで録音できない場合は、端末のマイクアクセス権限を確認してください。</li>
-          <li>作成したデータは、各アプリ内の保存データとして管理されます。</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>ボイスチェンジャーの確認事項</h2>
+        <ul>
+          <li>録音できない場合は、端末のマイクアクセス権限を確認してください。</li>
+          <li>音声が再生されない場合は、端末の音量とマナーモード設定を確認してください。</li>
+          <li>保存済み音声は、アプリ内の保存データとして管理されます。</li>
         </ul>
       </section>
 
