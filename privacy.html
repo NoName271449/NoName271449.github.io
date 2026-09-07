@@ -1,208 +1,416 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>プライバシーポリシー | Apps</title>
+  <title>プライバシーポリシー | Apps</title>
 
-<style>
-:root {
-  --bg: #f3f6fb;
-  --card: #ffffff;
-  --line: #d8e0ec;
-  --text: #101827;
-  --sub: #465469;
-  --muted: #758196;
-  --accent: #3b4a63;
-}
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #ffffff;
+      --text: #222222;
+      --secondary-text: #666666;
+      --link: #0066cc;
+      --border: #dddddd;
+    }
 
-* {
-  box-sizing: border-box;
-}
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #111111;
+        --text: #f2f2f2;
+        --secondary-text: #b8b8b8;
+        --link: #66aaff;
+        --border: #333333;
+      }
+    }
 
-body {
-  margin: 0;
-  min-height: 100vh;
-  color: var(--text);
-  font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
-  line-height: 1.75;
-  background: linear-gradient(180deg, #ffffff, var(--bg));
-}
+    * {
+      box-sizing: border-box;
+    }
 
-a {
-  color: var(--accent);
-  font-weight: 700;
-}
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Helvetica Neue",
+        "Hiragino Sans",
+        "Yu Gothic",
+        Meiryo,
+        sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+    }
 
-.wrap {
-  width: min(880px, calc(100% - 24px));
-  margin: 24px auto 36px;
-}
+    main {
+      width: min(100% - 32px, 820px);
+      margin: 0 auto;
+      padding: 40px 0 64px;
+    }
 
-.hero,
-.section {
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  background: var(--card);
-  box-shadow: 0 12px 28px rgba(32, 46, 70, 0.08);
-}
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(28px, 6vw, 38px);
+      line-height: 1.35;
+    }
 
-.hero {
-  padding: 26px 22px;
-}
+    h2 {
+      margin: 40px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+      font-size: 21px;
+      line-height: 1.5;
+    }
 
-.section {
-  margin-top: 14px;
-  padding: 20px;
-}
+    p {
+      margin: 12px 0;
+    }
 
-h1 {
-  margin: 0;
-  font-size: clamp(28px, 5vw, 40px);
-  line-height: 1.3;
-}
+    ul {
+      margin: 12px 0;
+      padding-left: 24px;
+    }
 
-h2 {
-  margin: 0 0 8px;
-  font-size: 20px;
-}
+    li {
+      margin: 8px 0;
+    }
 
-p,
-li {
-  color: var(--sub);
-}
+    a {
+      color: var(--link);
+      overflow-wrap: anywhere;
+    }
 
-p {
-  margin: 0;
-}
+    .updated {
+      margin-bottom: 32px;
+      color: var(--secondary-text);
+      font-size: 14px;
+    }
 
-ul {
-  margin: 10px 0 0;
-  padding-left: 1.2em;
-}
-
-.updated {
-  margin-top: 8px;
-  color: var(--muted);
-  font-size: 13px;
-}
-
-.footer {
-  margin-top: 14px;
-  color: var(--muted);
-  font-size: 13px;
-  text-align: center;
-}
-</style>
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--secondary-text);
+      font-size: 14px;
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
+  <main>
+    <h1>プライバシーポリシー</h1>
+    <p class="updated">最終更新日：2026年9月7日</p>
 
-<main class="wrap">
+    <h2>1. 適用範囲</h2>
 
-<section class="hero">
-  <h1>プライバシーポリシー</h1>
-  <p class="updated">最終更新日: 2026年9月7日</p>
-</section>
+    <p>
+      本プライバシーポリシーは、当方が提供するスマートフォン向けアプリ
+      およびこれらに関連するサービス全般に適用されます。
+    </p>
 
-<section class="section">
-  <h2>1. ユーザーデータについて</h2>
+    <p>
+      アプリによって利用できる機能、取り扱う情報および使用する
+      第三者サービスが異なる場合があります。
+    </p>
 
-  <p>
-    当開発者が提供するアプリで使用する写真、画像、音声その他の
-    ユーザーが作成・選択したコンテンツは、端末内で処理・保存され、
-    開発者のサーバーへ送信されません。
-  </p>
-</section>
+    <h2>2. 取り扱う情報</h2>
 
-<section class="section">
-  <h2>2. 広告について</h2>
+    <p>
+      当方が提供するアプリでは、アプリの機能に応じて、
+      以下の情報を取り扱う場合があります。
+    </p>
 
-  <p>
-    アプリでは、広告配信のため Google AdMob および Unity Ads を
-    利用する場合があります。
-    これらの第三者サービスにより、広告識別子、IPアドレス、
-    端末・アプリ情報、広告の表示・操作情報、診断情報等が取得され、
-    広告配信、広告効果測定、不正利用防止、サービス改善等に
-    利用される場合があります。
-  </p>
+    <ul>
+      <li>
+        ユーザーが入力、貼り付け、読み込みまたは作成した文章、
+        タイトル、説明およびその他の入力内容
+      </li>
 
-  <p style="margin-top: 10px;">
-    これらの情報は各サービス提供者のプライバシーポリシーに基づいて
-    管理されます。開発者は、これらの第三者サービスが本ポリシーと
-    同等の水準でユーザーデータを保護することを確認した上で利用します。
-  </p>
+      <li>
+        ユーザーが選択した写真、画像、PDF、テキストファイル、
+        音声ファイルおよびこれらへの参照情報
+      </li>
 
-  <ul>
-    <li>
-      <a
-        href="https://policies.google.com/privacy?hl=ja"
-        target="_blank"
-        rel="noopener noreferrer">
-        Google プライバシーポリシー
+      <li>
+        写真、画像またはPDFなどから抽出された文章
+      </li>
+
+      <li>
+        マイク入力から録音された音声データ
+      </li>
+
+      <li>
+        画像変換、文字抽出、読み上げ、音声加工、動画作成などによって
+        生成されたファイルおよび関連するメタデータ
+      </li>
+
+      <li>
+        読み上げ速度、言語、音量、声、ボイスチェンジャー、
+        出力形式、画質、画像サイズなどのアプリ内設定
+      </li>
+
+      <li>
+        ゲームの進行状況、対戦結果、勝敗数、勝率、
+        解放済みレベルなどの保存データ
+      </li>
+
+      <li>
+        ユーザーが作成した名称、説明、項目、画像、
+        抽選設定などの保存データ
+      </li>
+
+      <li>
+        広告配信のために広告SDKが取得する場合がある、
+        IPアドレスから推定されるおおよその位置情報、
+        端末識別情報、広告情報、アプリ内での操作情報、
+        クラッシュ情報およびパフォーマンス情報
+      </li>
+    </ul>
+
+    <h2>3. 情報の利用目的</h2>
+
+    <p>
+      取り扱う情報は、以下の目的で利用されます。
+    </p>
+
+    <ul>
+      <li>アプリの機能を提供するため</li>
+
+      <li>
+        写真、画像、文章、PDF、音声および動画の読み込み、
+        変換、加工、再生、保存、書き出しまたは共有を行うため
+      </li>
+
+      <li>
+        文章の読み上げ、画像やPDFからの文字抽出、
+        音声加工および字幕付き動画の作成を行うため
+      </li>
+
+      <li>
+        ゲームの進行状況、成績、設定および
+        ユーザーが作成した内容を保存するため
+      </li>
+
+      <li>
+        読み上げ設定、広告設定および
+        その他のアプリ内設定を端末内に保存するため
+      </li>
+
+      <li>広告の表示および配信を行うため</li>
+
+      <li>
+        広告効果の測定、不正利用の防止、
+        分析および広告サービスの改善を行うため
+      </li>
+
+      <li>
+        不具合調査、品質改善およびサポート対応を行うため
+      </li>
+    </ul>
+
+    <h2>4. 端末内で処理されるデータ</h2>
+
+    <p>
+      ユーザーが入力または選択した文章、写真、画像、PDF、
+      テキストファイル、音声および動画は、
+      各機能を提供するために原則としてユーザーの端末内で処理されます。
+    </p>
+
+    <p>
+      変換後の画像、保存した文章、ゲームの進行状況、
+      ユーザーが作成した内容、録音音声、加工音声および
+      生成した動画などは、端末内またはアプリの保存領域で管理されます。
+    </p>
+
+    <p>
+      当方がこれらの文章、写真、画像、PDF、音声、
+      動画またはユーザーが作成した内容そのものを
+      収集することを目的とした実装は行っていません。
+    </p>
+
+    <p>
+      外部アプリまたは外部サービスへの送信は、
+      ユーザーが共有、保存、書き出しなどの操作を
+      明示的に実行した場合に限られます。
+      共有先における情報の取り扱いについては、
+      共有先サービスのプライバシーポリシーをご確認ください。
+    </p>
+
+    <h2>5. アクセス権限</h2>
+
+    <p>
+      アプリの機能に応じて、写真、カメラ、マイク、
+      ファイルなどへのアクセスを求める場合があります。
+    </p>
+
+    <p>
+      これらの権限は、ユーザーが該当する機能を利用するために使用されます。
+      権限を許可しない場合でも、当該権限を必要としない機能は
+      引き続き利用できます。
+    </p>
+
+    <p>
+      アクセス権限は、端末の設定画面から確認または変更できます。
+    </p>
+
+    <h2>6. 第三者サービスの利用</h2>
+
+    <p>
+      広告を表示するアプリでは、広告配信のために
+      Google AdMobを利用しています。
+    </p>
+
+    <p>
+      また、一部のアプリでは、Google AdMobの
+      メディエーションを通じてUnity Adsなどの
+      第三者広告サービスを利用する場合があります。
+      利用する広告サービスはアプリによって異なります。
+    </p>
+
+    <p>
+      これらの広告サービスにより、IPアドレスから推定される
+      おおよその位置情報、端末識別情報、広告に関する情報、
+      アプリ内での操作情報、クラッシュ情報および
+      パフォーマンス情報などが取得される場合があります。
+    </p>
+
+    <p>
+      取得された情報は、広告配信、広告効果測定、
+      不正利用防止、分析およびサービス品質改善などに
+      利用される場合があります。
+    </p>
+
+    <ul>
+      <li>
+        <a
+          href="https://policies.google.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Google プライバシーポリシー
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="https://developers.google.com/admob/ios/privacy/data-disclosure?hl=ja"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Google AdMob データ開示情報
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Unity ゲームプレイヤーおよびアプリユーザー向け
+          プライバシーポリシー
+        </a>
+      </li>
+    </ul>
+
+    <h2>7. 広告に関する同意と追跡</h2>
+
+    <p>
+      広告を表示するアプリでは、適用される地域の法令や
+      広告サービスの要件に応じて、広告配信に関する同意画面
+      またはプライバシー設定画面が表示される場合があります。
+    </p>
+
+    <p>
+      ユーザーの選択、地域および利用可能な広告の種類に応じて、
+      パーソナライズ広告、非パーソナライズ広告または
+      制限付き広告が表示される場合があります。
+    </p>
+
+    <p>
+      AppleのApp Tracking Transparencyによる許可を得ていない状態では、
+      広告識別子IDFAを利用した追跡は行いません。
+      追跡許可が必要な機能を使用する場合は、
+      iOSまたはiPadOSのシステム画面を通じて事前に許可を求めます。
+    </p>
+
+    <h2>8. 情報の保存期間と削除</h2>
+
+    <p>
+      アプリ内で作成または保存された情報は、
+      アプリの機能を提供するために必要な期間、
+      端末内またはアプリの保存領域に保持されます。
+    </p>
+
+    <p>
+      保存した文章、写真、画像、音声、動画、
+      ゲームの進行状況およびユーザーが作成した内容は、
+      アプリ内の削除機能またはファイルアプリから削除できます。
+    </p>
+
+    <p>
+      アプリをアンインストールすることで、
+      アプリの保存領域にあるデータを削除できます。
+      ただし、ユーザーが写真アプリ、ファイルアプリ、
+      クラウドサービスまたは外部アプリへ保存したデータは、
+      それぞれの保存先で削除する必要があります。
+    </p>
+
+    <h2>9. ユーザーによる管理</h2>
+
+    <ul>
+      <li>
+        写真、カメラ、マイクなどへのアクセス権限は、
+        端末の設定画面から確認または変更できます。
+      </li>
+
+      <li>
+        アプリ内に保存されたデータは、
+        アプリ内の削除機能から削除できる場合があります。
+      </li>
+
+      <li>
+        広告に関する選択肢が提供される場合は、
+        アプリ内の広告プライバシー設定から
+        選択内容を確認または変更できます。
+      </li>
+
+      <li>
+        アプリをアンインストールすることで、
+        端末内のアプリ関連データを削除できます。
+      </li>
+    </ul>
+
+    <h2>10. 本ポリシーの変更</h2>
+
+    <p>
+      本プライバシーポリシーは、提供する機能、
+      利用する第三者サービス、法令などの変更に応じて
+      改定する場合があります。
+      改定後の内容は、本ページに掲載した時点から適用されます。
+    </p>
+
+    <h2>11. お問い合わせ</h2>
+
+    <p>
+      本プライバシーポリシーに関するお問い合わせは、
+      以下のサポートページよりご連絡ください。
+    </p>
+
+    <p>
+      <a href="https://noname271449.github.io/support.html">
+        サポートページ
       </a>
-    </li>
+    </p>
 
-    <li>
-      <a
-        href="https://developers.google.com/admob/ios/privacy/data-disclosure"
-        target="_blank"
-        rel="noopener noreferrer">
-        AdMob データ開示情報
-      </a>
-    </li>
-
-    <li>
-      <a
-        href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
-        target="_blank"
-        rel="noopener noreferrer">
-        Unity プライバシーポリシー
-      </a>
-    </li>
-  </ul>
-</section>
-
-<section class="section">
-  <h2>3. データの管理</h2>
-
-  <p>
-    端末内に保存されたデータは、アプリ内の削除機能または
-    アプリのアンインストールにより削除できます。
-    写真、マイク、トラッキング等の許可は、iOSの設定から変更できます。
-  </p>
-
-  <p style="margin-top: 10px;">
-    開発者はユーザーの写真、画像、音声等をサーバーに保存していません。
-    第三者サービスが取得した情報の保存および削除については、
-    各サービス提供者のプライバシーポリシーが適用されます。
-  </p>
-</section>
-
-<section class="section">
-  <h2>4. プライバシーポリシーの変更</h2>
-
-  <p>
-    本ポリシーは、必要に応じて変更する場合があります。
-    変更後の内容は、本ページに掲載した時点から適用されます。
-  </p>
-</section>
-
-<section class="section">
-  <h2>5. お問い合わせ</h2>
-
-  <p>
-    本ポリシーに関するお問い合わせは、
-    <a href="support.html">サポートページ</a>
-    よりご連絡ください。
-  </p>
-</section>
-
-<p class="footer">© 2026 Apps</p>
-
-</main>
-
+    <footer>
+      © 2026 Apps
+    </footer>
+  </main>
 </body>
 </html>
